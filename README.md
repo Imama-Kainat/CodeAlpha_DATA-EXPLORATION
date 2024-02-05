@@ -37,11 +37,13 @@ sns.pairplot(iris_df, hue='target', palette='viridis')
 plt.show()
 
 # Boxplot to visualize the distribution of each feature
+# Boxplot to visualize the distribution of each feature
 plt.figure(figsize=(12, 6))
 for i, feature in enumerate(iris.feature_names):
     plt.subplot(2, 2, i+1)
     sns.boxplot(x='target', y=feature, data=iris_df, hue='target', palette='viridis', legend=False)
 plt.show()
+
 ```
 
 ## Explanation:
